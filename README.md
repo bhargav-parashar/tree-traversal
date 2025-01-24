@@ -10,4 +10,4 @@ In bst.js, I have implemented a Binary Search Tree using class structure in Java
                 Returns undefined if value is already present, otherwise returns the updated tree after value is insterd.
 - find(val)   : Checks the tree for the input value and returns the value if found otherwise returns undefined.
 
-Will be adding BFS and DFS traversal methods in future commits.
+Will be adding DFS traversal method in future commits.

@@ -62,7 +62,23 @@ class BinarySearchTree {
         if(!found) return undefined;
         return current;
     }
-
+    //Method that returns the Breadth First Search result
+    BFS(){
+        let curr = this.root;
+        const res = [];
+        const queue = [];
+        queue.push(curr);
+    
+        while(queue.length){
+            curr = queue.shift();
+            res.push(curr.val);
+            if(curr.left)
+                queue.push(curr.left);
+            if(curr.right)
+                queue.push(curr.right);
+        }
+        return res;
+    }
 
 }
 
@@ -74,5 +90,5 @@ tree.insert(15);
 tree.insert(3);
 tree.insert(8);
 tree.insert(20);
-    
+tree.BFS();    
 
