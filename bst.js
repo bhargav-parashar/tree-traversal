@@ -79,7 +79,7 @@ class BinarySearchTree {
         }
         return res;
     }
-    //Method that returns Pre-order Breadth First Search result
+    //Method that returns Pre-order Depth First Search result
     DFSPreOrder(){
         let res = [];
         let curr = this.root;
@@ -93,7 +93,7 @@ class BinarySearchTree {
         traverse(curr);
         return res;
     }
-    //Method that returns Post-order Breadth First Search result
+    //Method that returns Post-order Depth First Search result
     DFSPostOrder(){
         let res = [];
         let curr = this.root;
