@@ -93,6 +93,20 @@ class BinarySearchTree {
         traverse(curr);
         return res;
     }
+    //Method that returns Post-order Breadth First Search result
+    DFSPostOrder(){
+        let res = [];
+        let curr = this.root;
+        function traverse(node){
+            if(node.left)
+                traverse(node.left);
+            if(node.right)
+                traverse(node.right);
+            res.push(node.val);
+        }
+        traverse(curr);
+        return res;
+    }
 }
 
 
@@ -105,4 +119,5 @@ tree.insert(8);
 tree.insert(20);
 tree.BFS();   
 tree.DFSPreOrder(); 
+tree.DFSPostOrder();
 
