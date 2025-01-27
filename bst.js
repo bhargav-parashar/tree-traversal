@@ -107,6 +107,20 @@ class BinarySearchTree {
         traverse(curr);
         return res;
     }
+    //Method that returns In-order Depth First Search result
+    DFSInOrder(){
+        let res = [];
+        let curr = this.root;
+        function traverse(node){
+            if(node.left)
+                traverse(node.left);
+            res.push(node.val);
+            if(node.right)
+                traverse(node.right);   
+        }
+        traverse(curr);
+        return res;
+    }
 }
 
 
@@ -120,4 +134,5 @@ tree.insert(20);
 tree.BFS();   
 tree.DFSPreOrder(); 
 tree.DFSPostOrder();
+tree.DFSInOrder();
 

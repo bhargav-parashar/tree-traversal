@@ -12,5 +12,5 @@ In bst.js, I have implemented a Binary Search Tree using class structure in Java
 - BFS()       : Performs BFS Traversal and returns values of visited nodes in an array.
 - DFSPreOrder() : Performs pre-order DFS Traversal and returns values of visited nodes in an array.
 - DFSPostOrder() : Performs post-order DFS Traversal and returns values of visited nodes in an array.
+- DFSInOrder() : Performs in-order DFS Traversal and returns values of visited nodes in an array.
 
-Will be adding in-order DFS traversal method in future commits.
